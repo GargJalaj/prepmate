@@ -22,7 +22,7 @@ export default function LandingPage() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.document.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -95,7 +95,6 @@ export default function LandingPage() {
         </h1>
       </div>
 
-      {/* Gradient fade at bottom of full-screen hero */}
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-purple-600 to-transparent pointer-events-none z-10" />
 
       {/* Spacer to simulate scroll */}

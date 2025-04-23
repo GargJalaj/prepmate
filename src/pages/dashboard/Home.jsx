@@ -10,7 +10,7 @@ export default function Home() {
       {/* Upload PDF button */}
       <Link
         to="/dashboard/upload"
-        className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300"
+        className="bg-blue-500 text-white px-6 py-1 rounded-md hover:bg-blue-600 transition duration-300"
       >
         Upload PDF
       </Link>

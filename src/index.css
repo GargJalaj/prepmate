@@ -4,13 +4,12 @@
 
   body::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* Optional: just in case */
+    background: transparent; 
   }
  
   .shimmer-text {
     background-size: 1000px 100%;
     animation: shimmer 4s linear infinite;
-    /* REMOVE filter for better clarity */
   }
 
   @keyframes shimmer {
@@ -21,3 +20,17 @@
       background-position: 500px 0;
     }
   }
+
+  /* In your CSS */
+.perspective {
+  perspective: 1000px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg)  ;
+}

@@ -6,8 +6,10 @@ import Upload from "./pages/Upload";
 import PageWrapper from "./PageWrapper";
 import { AnimatePresence } from "framer-motion";
 import Dashboard from "./pages/Dashboard";
+import DashboardHome from "./pages/DashboardHome";
 import Profile from "./pages/dashboard/Profile";
 import Home from "./pages/dashboard/Home";
+import Flashcards from "./pages/Flashcards";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -19,11 +21,11 @@ function AnimatedRoutes() {
         <Route path="/register" element={<PageWrapper><Register /></PageWrapper>} />
         <Route path="/login" element={<PageWrapper><Login /></PageWrapper>} />
         <Route path="/upload" element={<PageWrapper><Upload /></PageWrapper>} />
-        
+        <Route path="/flashcards" element={<PageWrapper><Flashcards /></PageWrapper>} />
         {/* Dashboard routes with nested pages */}
         <Route path="/dashboard" element={<Dashboard />}>
           {/* This is where the default page will render */}
-          <Route index element={<Home />} /> {/* Set Home as default */}
+          <Route index element={<DashboardHome />} /> {/* Set Home as default */}
           <Route path="home" element={<Home />} />
           <Route path="profile" element={<Profile />} />
           
